@@ -3,7 +3,7 @@ Module.register("MMM-VolvoOnCall", {
     debug: false,
     scanInterval: 1000 * 60 * 30,
     refreshInterval: 1000 * 60 * 1,
-    units: "kr", // "metric", "us", "imperial", "kr" could be available
+    units: "us", // "metric", "us", "imperial", "kr" could be available
     timestampFormat: "MMM D. HH:mm:ss",
     durationFormat: "HH:mm",
     iconify: "https://code.iconify.design/1/1.0.4/iconify.min.js", // if you are using other module which has `iconfy` already, set this to "null"
