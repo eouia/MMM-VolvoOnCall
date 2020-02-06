@@ -5,11 +5,11 @@ MM plugin for Volvo car status with VOC
 ![](https://raw.githubusercontent.com/eouia/MMM-VolvoOnCall/master/voc.png)
 
 ## Notice
-- This module use unofficial and not-well-supported methods to retrieve sensitive informations of the car.
-- I have no legal right or duty for data and module's working. All responsibility of using is on yours.
-- This module may not work at anytime without any notice.
-- For safety, I will not implement any remote-controllable features on this module.(like heater on, engine start, door unlock, or anything)
-- I have only one vehicle to test, so test might be not enough. There could be possibility of bugs on having more than one car, and locale issue by language or location.
+- This module uses unofficial and not-well-supported methods to retrieve sensitive information of the car.
+- I have no legal right or duty for data and module's working. All responsibility for using is on yours.
+- This module may not work at any time without any notice.
+- For safety, I will not implement any remote-controllable features on this module. (like heater on, engine start, door unlock, or anything)
+- I have only one vehicle to test, so the test might be not enough. There could be the possibility of bugs on having more than one car, and locale issue by language or location.
 
 ## Installation
 ### 0. VolvoOnCall
