@@ -1,0 +1,151 @@
+.VOC {
+  max-width:300px;
+  text-align:left;
+}
+
+.VOC .section {
+  margin-bottom: 5px;
+  font-size: 16px;
+  width: 100%;
+  color: #EEE;
+}
+
+.VOC .item {
+  margin-bottom:5px;
+  padding:0;
+  line-height:100%;
+}
+
+.VOC .iconfy {
+  line-height:100%;
+}
+
+
+.VOC .section.info .name {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.VOC .section.status .content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size:16px;
+  max-width:100%;
+}
+
+.VOC .section.status .bar {
+  order: 1;
+  width: 100%;
+  flex-basis:100%;
+  flex-grow:1;
+  background-color: #666;
+  position: relative;
+}
+
+.VOC .section.status .guage {
+  background-color: #FF9;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.VOC .section.status .amount {
+  text-align: right;
+  color:#EEE;
+  padding-right:5px;
+}
+
+.VOC .section.status .level {
+  text-align: right;
+  color:#000;
+  padding-right:5px;
+}
+
+.VOC .section.status .range {
+  order: 2;
+  width: 50%;
+  text-align: left;
+}
+
+.VOC .section.status .consumption {
+  order: 3;
+  width: 50%;
+  text-align: right;
+}
+
+.VOC .section.status .odometer {
+  order: 4;
+  width: 50%;
+  text-align: left;
+}
+
+.VOC .section.status .avgSpeed {
+  order: 5;
+  width: 50%;
+  text-align: right;
+}
+
+.VOC .section.notice {
+  text-align:left;
+  line-height:100%;
+}
+
+
+.VOC .section.notice .mark {
+  display: inline-block;
+  padding:2px 5px;
+  margin:2px;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #F63;
+  color:#FFF;
+  font-weight:bold;
+}
+
+.VOC .section.notice .mark.off,
+.VOC .section.notice .mark.closed,
+.VOC .section.notice .mark.ok {
+  background-color:#666;
+  color:#000;
+}
+
+.VOC .section.trip .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width:100%;
+  font-size: 12px;
+  background-color: #CDE;
+  border-radius: 6px;
+  padding:6px;
+  color: #000;
+}
+
+.VOC .section.trip .departure {
+  order: 1;
+  width: 49%;
+  text-align: left;
+}
+
+.VOC .section.trip .arrival {
+  order: 2;
+  width: 49%;
+  text-align: right;
+  border-left: 1px dashed #000;
+}
+
+.VOC .section.trip .street {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.VOC .section.trip .city,
+.VOC .section.trip .time {
+  padding-left: 14px;
+}
+
+.VOC .section.trip .bit {
+  order: 3;
+  text-align:left;
+}

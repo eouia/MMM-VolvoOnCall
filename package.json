@@ -1,0 +1,28 @@
+
+{
+  "name": "MMM-VolvoOnCall",
+  "version": "1.0.0",
+  "description": "MM plugin for Volvo car status with VOC",
+  "main": "MMM-VolvoOnCall.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eouia/MMM-VolvoOnCall.git"
+  },
+  "keywords": [
+    "MagicMirror",
+    "volvo",
+    "VolvoOnCall"
+  ],
+  "author": "eouia <eouia0819@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eouia/MMM-VolvoOnCall/issues"
+  },
+  "homepage": "https://github.com/eouia/MMM-VolvoOnCall#readme",
+  "dependencies": {
+    "moment": "^2.22.2"
+  }
+}
