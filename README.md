@@ -59,7 +59,7 @@ If not working, just sorry.
 
 ### 3. Get Google Map API Key.
 Don't worry, it's free.
-https://developers.google.com/maps/documentation/javascript/get-api-key
+https://developers.google.com/maps/documentation/embed/get-api-key
 
 ### 4. Install module
 ```sh
