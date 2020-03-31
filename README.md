@@ -11,6 +11,13 @@ MM plugin for Volvo car status with VOC
 - For safety, I will not implement any remote-controllable features on this module.(like heater on, engine start, door unlock, or anything)
 - I have only one vehicle to test, so test might be not enough. There could be possibility of bugs on having more than one car, and locale issue by language or location.
 
+
+## New Updates
+### **`[1.0.1] - 2020/03/31`**
+- **fixed**: Negative lat/long formatting. (Thanks to @Hysteria92)
+- **fixed**: Too many trips records.
+
+
 ## Installation
 ### 0. VolvoOnCall
 Of course, you have to be an active member of `Volvo on Call` service, and your car and your account should be linked without issue.

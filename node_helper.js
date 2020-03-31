@@ -1,5 +1,6 @@
-var exec = require('child_process').exec
-var moment = require("moment")
+const exec = require('child_process').exec
+const spawn = require('child_process').spawn
+const moment = require("moment")
 
 var NodeHelper = require("node_helper")
 
@@ -92,7 +93,7 @@ module.exports = NodeHelper.create({
 
   reformValue: function(key, value) {
     if (key == "Position") {
-      var re = /([0-9\.]+)\,\s([0-9\.]+),\s\'([^\']+)\'/
+      var re = /([0-9\.\-]+)\,\s([0-9\.\-]+),\s\'([^\']+)\'/
       var matches = re.exec(value)
       if (matches) {
         return {
@@ -123,15 +124,22 @@ module.exports = NodeHelper.create({
 
   trip: function() {
     for(var i = 0; i < this.carInfo.length; i++) {
-      carId = this.carInfo[i].id
-      exec(`voc -i ${carId} --json trips`, (e, sdo, sde)=> {
-        if (e) {
-          console.log("[VOC] ERROR:", e.toString())
-        } else {
+      try {
+        carId = this.carInfo[i].id
+        var sdo = ""
+        var result = spawn('voc', [
+          '-i', carId,
+          '--json', 'trips'
+        ])
+        result.stdout.on('data', (data)=>{
+          sdo += data
+        })
+        result.on('close', (killcode)=>{
           this.tripResult(carId, JSON.parse(sdo))
-          //this.sendSocketNotification("RESULT", sdo)
-        }
-      })
+        })
+      } catch (e) {
+        console.log("[VOC] ERROR:", e.toString())
+      }
     }
   },
 
