@@ -1,3 +1,8 @@
+> This module is archived. I'm not the owner of Volvo anymore so I can't maintain this module.
+>
+> Try https://github.com/mazim-co/MMM-MyVolvo 
+
+
 # MMM-VolvoOnCall
 MM plugin for Volvo car status with VOC
 
